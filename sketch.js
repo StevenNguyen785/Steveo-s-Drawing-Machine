@@ -5,7 +5,8 @@ let strokeWidth = 10;
 
 function setup() {
   createCanvas(800, 400);
-  background(backgroundColor);
+  // background(backgroundColor);
+  drawGrid()
 
 
 }
@@ -64,4 +65,12 @@ endShape();
 function mousePressed() {
   array = [];
   backgroundColor = (80, 189, 206);
+}
+
+function drawGrid(){
+  numCells = 20;
+
+  for (let i = 0; i <= width; i += width / numCells){
+    rect(i,  300, width / numCells, width / numCells)
+  }
 }
