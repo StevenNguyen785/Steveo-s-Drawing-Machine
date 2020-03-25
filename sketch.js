@@ -5,7 +5,7 @@ let strokeWidth = 10;
 
 function setup() {
   createCanvas(800, 400);
-  // background(backgroundColor);
+  background(backgroundColor);
   drawGrid()
 
 
